@@ -45,6 +45,7 @@ function backup {
 	arch_files=$( total_archived_files $output )
 	arch_directories=$(total_archived_directories $output )
 
+	echo "########## $user ##########"
 	echo  "Files to be included: $src_files"
 	echo  "Directories to be included: $src_directories"
 	echo "Files archived: $arch_files"
